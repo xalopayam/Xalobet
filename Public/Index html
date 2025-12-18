@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XaloBet - معامله دلار، بیت‌کوین و شرط‌بندی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- لوگو SVG سفارشی: X طلایی با نماد بیت/دلار -->
+            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="#000" />
+                <text x="25" y="30" font-family="Arial" font-size="24" fill="#FFD700" text-anchor="middle" font-weight="bold">X</text>
+                <path d="M10 10 L40 40 M10 40 L40 10" stroke="#FFD700" stroke-width="2" />
+                <circle cx="20" cy="20" r="3" fill="#F7931A" /> <!-- بیت -->
+                <text x="35" y="35" font-size="12" fill="#FFD700">$</text> <!-- دلار -->
+            </svg>
+        </div>
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#exchange">معامله</a>
+            <a href="#bets">بت</a>
+            <a href="#casino">کازینو</a>
+            <a href="#wallet">کیف پول</a>
+            <button id="loginBtn">ورود</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h1>به XaloBet خوش آمدید</h1>
+                <p>معامله امن دلار، تتر و بیت‌کوین + شرط‌بندی هیجان‌انگیز</p>
+                <div id="rates" class="rates"></div>
+            </div>
+        </section>
+
+        <section id="exchange">
+            <h2>خرید/فروش</h2>
+            <form id="tradeForm">
+                <select id="currency">
+                    <option value="usdt">تتر (USDT)</option>
+                    <option value="btc">بیت‌کوین (BTC)</option>
+                </select>
+                <input type="number" placeholder="مقدار" id="amount">
+                <button type="submit">ثبت سفارش</button>
+            </form>
+        </section>
+
+        <section id="bets">
+            <h2>پیش‌بینی ورزشی</h2>
+            <div id="betsList"></div>
+        </section>
+
+        <section id="casino">
+            <h2>کازینو زنده</h2>
+            <button id="playExplosion">بازی انفجار</button>
+            <div id="gameArea"></div>
+        </section>
+
+        <section id="wallet">
+            <h2>کیف پول</h2>
+            <div id="balance"></div>
+            <button id="chargeBtn">شارژ</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 XaloBet. همه حقوق محفوظ.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="authForm">
+                <input type="tel" placeholder="شماره موبایل" id="phone">
+                <input type="password" placeholder="رمز عبور" id="password">
+                <button type="submit" id="submitBtn">ثبت‌نام/ورود</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
